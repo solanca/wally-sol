@@ -5,7 +5,7 @@ import Tokenomics from './component/Tokenomics'
 import Ready from './component/Ready'
 import Footer from './component/Footer'
 import Banner from './component/Banner'
-import { AppBar, Container } from '@mui/material'
+import { Container } from '@mui/material'
 import Header from './component/Header'
 
 

@@ -1,9 +1,8 @@
 import { AppBar, Button, Toolbar } from '@mui/material'
-import React from 'react'
 
 type Props = {}
 
-const Header = (props: Props) => {
+const Header = (_props: Props) => {
     
   return (
     <AppBar position='absolute' sx={{backgroundColor:"transparent",top:20,px:{md:30,sm:5},boxShadow:'none' }}>
