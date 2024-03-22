@@ -155,6 +155,7 @@ button {
   flex-shrink: 0;
   position: relative;
   transform: translateY(100px);
+  animation: boat 5s ease-in-out infinite alternate;
   margin-top: auto
 }
 
@@ -262,18 +263,18 @@ button {
   box-shadow: 2px 5px 0px #10161a;
   border-radius: 16px;
   text-shadow: none;
-  font-size: 128px;
+  font-size: 100px;
   line-height: 70%;
   margin-top: 8px
 }
 
 @media screen and (max-width: 1440px) {
   .hero__title {
-      font-size:72px
+      font-size:50px
   }
 
   .hero__title span {
-      font-size: 92px
+      font-size: 62px
   }
 }
 
@@ -952,13 +953,29 @@ button {
 }
 
 @keyframes community-illustration {
-  from {
+  /* from {
       transform: scale(1) rotate(0deg)
   }
 
   to {
       transform: scale(1.1) rotate(-10deg)
+  } */
+
+  0% {
+    transform: translate3d(0px, 0px, 0);
   }
+  50% {
+    transform: translate3d(0px, -50px, 0);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0);
+  }
+/* 50% {
+  transform: skew(30deg);
+} */
+/* 100% {
+    transform: translateY(-100%)
+} */
 }
 
 .ready-content {
@@ -987,12 +1004,12 @@ button {
   /* padding: 180px 0 */
 }
 
-@media screen and (max-width: 1300px) {
+/* @media screen and (max-width: 1300px) {
   .about {
       background:url("assets/img/about/website 3.png") center/cover no-repeat,#81CCFD;
       padding: 300px;
   }
-}
+} */
 
 .ready__top {
   position: absolute;
