@@ -1006,9 +1006,7 @@ button {
 } */
 }
 
-.ready-content {
 
-}
 
 .ready {
   background: linear-gradient(0deg, rgba(18,82,207,1) 0%, rgba(67,148,240,1) 51%, rgba(126,208,255,1) 100%);  /* background: url("assets/img/ready/website 2.png")  center / contain no-repeat,#81CCFD; */
@@ -1024,13 +1022,6 @@ button {
       padding: 300px;
   }
 } */
-.about {
-  /* background: url("assets/img/about/website 3.png")  center / contain no-repeat,#81CCFD; */
-  /* position: relative; */
- /* width: 100vw;
- height: 100vh; */
-  /* padding: 180px 0 */
-}
 
 /* @media screen and (max-width: 1300px) {
   .about {
