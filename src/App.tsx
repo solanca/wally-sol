@@ -4,16 +4,27 @@ import Community from './component/Community'
 import Tokenomics from './component/Tokenomics'
 import Ready from './component/Ready'
 import Footer from './component/Footer'
+import Banner from './component/Banner'
+import { AppBar, Container } from '@mui/material'
+import Header from './component/Header'
 
 
 function App() {
 
   return (
     <div className="wrapper">
+      <Container  sx={{px:6}}>
+
+      <Header/>
+      </Container>
       <Hero/>
       <Community/>
       <Tokenomics/>
       <Ready/>
+      <div className="marque ">
+        <Divider/>
+      </div>
+      <Banner/>
       <div className="marque ">
         <Divider/>
       </div>
