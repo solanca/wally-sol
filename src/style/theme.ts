@@ -13,13 +13,23 @@ export const theme = createTheme({
             styleOverrides:{
                 root:{
                     background:' url("assets/svg/cloud.svg") center center no-repeat',
-                    width:130,
-                    height:90,
+                    backgroundSize:'contain',
+                    // width:100,
+                    // height:70,
                     transition: 'transform 0.3s',
                     '&:hover':{
                         background:' url("assets/svg/cloud.svg") center center no-repeat',
-                        transform: 'scale(1.2)',
+                        backgroundSize:'contain',
+                        transform: 'scale(1.4)',
                     }
+                }
+            }
+        },
+        MuiButtonBase:{
+            styleOverrides:{
+                root:{
+                    fontSize:20,
+                    textTransform:'capitalize'
                 }
             }
         }

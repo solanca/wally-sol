@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Box, Button, ButtonBase, Grid, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 
 const MESSAGES = [
@@ -18,8 +18,26 @@ function Hero() {
 
   return (
     <section className="hero">
-      <div className="hero__container container">
-        <div className="hero__cat">
+      <img src="assets/img/ready/website.png"/>
+      <Grid container justifyContent={"center"}>
+
+      <Box sx={{position:'absolute',top:120}} >
+        <Box sx={{position:'relative'}}>
+
+      <img src="assets/img/ready/ready-contract-background.svg"height={'110px'}/>
+
+<Grid container justifyContent={"center"}>
+
+<Typography className="ca" sx={{position:'absolute',top:20,textTransform:'capitalize'}} variant="h4"  >Contract Address:  </Typography>
+{/* <Typography className="ca" sx={{position:'absolute',top:60}} variant="h6"  >E6NeSa1mYXvShN78N1rQPkDAcsT4e4uJ9rEg9h8QPGpZ  </Typography> */}
+</Grid>
+        <button style={{background:' url("assets/img/ready/ready-copy-button-background.svg") center center no-repeat',backgroundSize:'contain',transform:'rotate(-4deg)',right:"-20px",bottom:"-24px",position:'absolute',padding:'16px 32px',border:'none'}}>Copy</button>
+        </Box>
+      </Box>
+      </Grid>
+
+      {/* <div className="hero__container container"> */}
+        {/* <div className="hero__cat">
           <img src="assets/img/hero/1.png" alt="1" />
           <div className="hero__message hero-message">
             <img
@@ -27,29 +45,34 @@ function Hero() {
               src="assets/img/hero/hero-message.png"
               alt=""
             />
-            <Typography variant="h4" className="hero-message__text">{message}</Typography>
-          </div>
-        </div>
-        <div className="hero__col">
-          <div className="hero__top">
+            <Typography variant="h4" className="hero-message__text">{message}</Typography> */}
+        {/* </div>
+        </div> */} 
+        {/* <div className="hero__col">
+          <div className="hero__top"> */}
             {/* <img
               className="hero__suptitle"
               src="assets/img/logo.png"
               alt="" /> */}
-            <div className="hero__lang lang">
-              <ul className="lang__list">
+            {/* <div className="hero__lang lang">
+              <ul className="lang__list"> */}
                 {/* <li className="lang__item" onclick="window.location.href = '/'">
             EN
           </li>
           <li className="lang__item" onclick="window.location.href='/cn/'">
             CN
           </li> */}
-              </ul>
+              {/* </ul>
             </div>
-          </div>
-          {/* <h1 className="hero__title">
-            NEVER FALL IN<br />LOVE WITH A<br /><span>meme coin</span>
-          </h1> */}
+          </div> */}
+          {/* <div className="hero__title">
+            <Grid container justifyContent={"center"}> */}
+              
+
+          {/* <Typography variant="h6" className="hero__title">   </Typography> */}
+            {/* NEVER FALL IN<br />LOVE WITH A<br /><span>meme coin</span> */}
+            {/* </Grid>
+          </div> */}
           {/* <div className="hero__row">
             <a
               className="hero__btn hero__btn_lg"
@@ -75,8 +98,8 @@ function Hero() {
               </a>
             </div>
           </div> */}
-        </div>
-      </div>
+        {/* </div>
+      </div> */}
     </section>
   );
 }

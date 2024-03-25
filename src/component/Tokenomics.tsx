@@ -4,7 +4,7 @@ type Props = {};
 
 const Tokenomics = (_props: Props) => {
   return (
-    <div className="tokenomics">
+    <div className="tokenomics" id="wallynomics">
       <div className="tokenomics__container container">
       <motion.div
               animate={{

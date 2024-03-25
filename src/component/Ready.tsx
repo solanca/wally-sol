@@ -8,10 +8,10 @@ const Ready = (_props: Props) => {
   // Define the animation variant
 
   return (
-    <section className="ready">
+    <section className="ready"id="how_to_buy">
       <Grid container justifyContent={"center"} mt={2}>
         <Typography color={"azure"} variant="h2" textAlign={"center"}>
-          How to buy $wally
+          How to buy wally
         </Typography>
       </Grid>
       <Grid container mt={2} alignItems={"center"} spacing={4}>
