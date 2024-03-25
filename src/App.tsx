@@ -3,8 +3,7 @@ import Divider from "./component/Divider";
 import Tokenomics from "./component/Tokenomics";
 import Ready from "./component/Ready";
 import Footer from "./component/Footer";
-import Banner from "./component/Banner";
-import { Box, Button, Container, Fab, Fade, useScrollTrigger } from "@mui/material";
+import { Box, Button, Container, Fade, useScrollTrigger } from "@mui/material";
 import Header from "./component/Header";
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
@@ -54,7 +53,7 @@ function ScrollTop(props: Props) {
   );
 }
 
-function App(props:Props) {
+function App(props:any) {
   return (
     <div className="wrapper">
       <Container maxWidth="lg" sx={{ position:'absolute',top:20,left:0,right:0 }}>

@@ -1,20 +1,8 @@
-import { Box, Button, ButtonBase, Grid, Typography } from "@mui/material";
-import { useEffect, useState } from "react";
+import { Box, Grid, Typography } from "@mui/material";
 
-const MESSAGES = [
-  "Seems like\nu planned a date\nwith someone",
-  "did you ever talk\nto a wally?",
-  "I’LL BE YOUR LAST\nwally TONIGHT",
-];
+
 function Hero() {
-  const [message, setMessage] = useState<string>(MESSAGES[0]);
-  useEffect(() => {
-    let CURRENT_MESSAGE = 1;
-    setInterval(() => {
-      CURRENT_MESSAGE++;
-      setMessage(MESSAGES[CURRENT_MESSAGE % MESSAGES.length]);
-    }, 5000);
-  }, []);
+  
 
   return (
     <section className="hero">
