@@ -1,6 +1,5 @@
 import Hero from './component/Hero'
 import Divider from './component/Divider'
-import Community from './component/Community'
 import Tokenomics from './component/Tokenomics'
 import Ready from './component/Ready'
 import Footer from './component/Footer'
