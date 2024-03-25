@@ -18,7 +18,16 @@ function App() {
       <Header/>
       </Container>
       <Hero/>
-      <Community/>
+      {/* <Community/> */}
+      <div className="marque ">
+        <Divider/>
+      </div>
+      <section className="about">
+       <img className="about-content" src="/assets/img/about/website 3.png"/>
+      </section>
+      <div className="marque ">
+        <Divider/>
+      </div>
       <Tokenomics/>
       <Ready/>
       <div className="marque ">
@@ -28,9 +37,6 @@ function App() {
       <div className="marque ">
         <Divider/>
       </div>
-      <section className="about">
-       <img className="about-content" src="/assets/img/about/website 3.png"/>
-      </section>
       <Footer/>
     </div>
   )

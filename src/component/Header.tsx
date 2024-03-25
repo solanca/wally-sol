@@ -1,4 +1,4 @@
-import { AppBar, Button, Toolbar } from '@mui/material'
+import { AppBar, Box, Button, Toolbar } from '@mui/material'
 
 type Props = {}
 
@@ -13,6 +13,8 @@ const Header = (_props: Props) => {
            <Button sx={{ml:4}}>
             <img src='assets/svg/te.svg'/>
            </Button>
+           <Box flexGrow={1}/>
+           <img src='assets/logo.png' width={"20%"}/>
         </Toolbar>
     </AppBar>
   )

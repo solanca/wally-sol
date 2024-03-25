@@ -20,6 +20,7 @@ const Ready = (_props: Props) => {
             <Bubble y1={200} x={0} y={30} x1={0} />
             <Bubble y1={150} x={30} y={30} delay={0.5} x1={40} />
             <motion.div
+              initial={{ scale: 0.9 }}
               animate={{
                 y: [-10, 0, -10],
               }}
@@ -38,6 +39,7 @@ const Ready = (_props: Props) => {
           <div style={{ position: "relative" }}>
             <Bubble y1={300} x={0} y={-50} x1={0} />
             <motion.div
+              initial={{ scale: 0.9 }}
               animate={{
                 y: [0, -10, 0],
               }}
@@ -53,41 +55,43 @@ const Ready = (_props: Props) => {
           </div>
         </Grid>
         <Grid item md={6} sm={12} xs={12}>
-          <div style={{position:"relative"}}>
-          <Bubble y1={200} x={150} y={-130} x1={0} />
+          <div style={{ position: "relative" }}>
+            <Bubble y1={200} x={150} y={-130} x1={0} />
 
-          <motion.div
-            animate={{
-              y: [0, -10, 0],
-            }}
-            transition={{
-              duration: 2,
-              ease: "easeInOut",
-              times: [0, 0.5, 1],
-              repeat: Infinity,
-            }}
-          >
-            <img src="assets/website assets/2.png" alt="" />
-          </motion.div>
+            <motion.div
+              initial={{ scale: 0.9 }}
+              animate={{
+                y: [0, -10, 0],
+              }}
+              transition={{
+                duration: 2,
+                ease: "easeInOut",
+                times: [0, 0.5, 1],
+                repeat: Infinity,
+              }}
+            >
+              <img src="assets/website assets/2.png" alt="" />
+            </motion.div>
           </div>
         </Grid>
         <Grid item md={6} sm={12} xs={12}>
-        <div style={{ position: "relative" }}>
-            <Bubble x={0} y={-50} x1={60} y1={300}/>
-            <Bubble x={30} y={-50} delay={0.5} x1={0} y1={200}/>
-          <motion.div
-            animate={{
-              y: [-10, 0, -10],
-            }}
-            transition={{
-              duration: 2,
-              ease: "easeInOut",
-              times: [0, 0.5, 1],
-              repeat: Infinity,
-            }}
-          >
-            <img src="assets/website assets/4.png" alt="" />
-          </motion.div>
+          <div style={{ position: "relative" }}>
+            <Bubble x={0} y={-50} x1={60} y1={300} />
+            <Bubble x={30} y={-50} delay={0.5} x1={0} y1={200} />
+            <motion.div
+              initial={{ scale: 0.9 }}
+              animate={{
+                y: [-10, 0, -10],
+              }}
+              transition={{
+                duration: 2,
+                ease: "easeInOut",
+                times: [0, 0.5, 1],
+                repeat: Infinity,
+              }}
+            >
+              <img src="assets/website assets/4.png" alt="" />
+            </motion.div>
           </div>
         </Grid>
       </Grid>

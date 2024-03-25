@@ -493,7 +493,7 @@ button {
 
 .tokenomics__boat {
   max-width: 50%;
-  animation: boat 1.5s ease-in-out infinite alternate
+  /* animation: boat 1.5s ease-in-out infinite alternate */
 }
 
 @media screen and (max-width: 1023.98px) {
