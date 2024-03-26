@@ -77,14 +77,14 @@ const Header = (_props: Props) => {
       <Box sx={{width:150,display:'flex',justifyContent:'center'}}  role="presentation">
       <List sx={{mt:6}} >
 
-        <ListItemButton onClick={() => scrollToAboutMe("about")}>
-          <ListItemText >About Me</ListItemText>
-        </ListItemButton>
         <ListItemButton onClick={() => scrollToAboutMe("wallynomics")}>
           <ListItemText>Wallynomics</ListItemText>
         </ListItemButton>
         <ListItemButton onClick={() => scrollToAboutMe("how_to_buy")}>
           <ListItemText>How to buy</ListItemText>
+        </ListItemButton>
+        <ListItemButton onClick={() => scrollToAboutMe("about")}>
+          <ListItemText >About Me</ListItemText>
         </ListItemButton>
       </List>
       </Box>
