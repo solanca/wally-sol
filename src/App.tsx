@@ -3,7 +3,7 @@ import Divider from "./component/Divider";
 import Tokenomics from "./component/Tokenomics";
 import Ready from "./component/Ready";
 import Footer from "./component/Footer";
-import { Box, Button, Fade, useScrollTrigger } from "@mui/material";
+import { Box, Button, Container, Fade, useScrollTrigger } from "@mui/material";
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
 interface Props {
@@ -55,6 +55,8 @@ function ScrollTop(props: Props) {
 function App(props:any) {
   return (
     <div className="wrapper">
+      <Container maxWidth="xl">
+
       <div id="start" />
       {/* <Container maxWidth="lg" sx={{ position:'absolute',left:0,right:0 }}> */}
         {/* <Header /> */}
@@ -90,6 +92,7 @@ function App(props:any) {
           <KeyboardArrowUpIcon />
         </Button>
       </ScrollTop>
+      </Container>
     </div>
   );
 }

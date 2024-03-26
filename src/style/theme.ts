@@ -1,6 +1,15 @@
 import { createTheme } from "@mui/material";
 
 export const theme = createTheme({
+   breakpoints:{
+    values:{
+        xs: 0,
+        sm: 760,
+        md: 1200,
+        lg: 1536,
+        xl: 1918,
+    }
+   },
     typography:{
         fontFamily:'Bubblegum'
     },
@@ -30,6 +39,16 @@ export const theme = createTheme({
                 root:{
                     fontSize:20,
                     textTransform:'capitalize'
+                }
+            }
+        },
+        MuiContainer:{
+            styleOverrides:{
+                root:{
+                    padding:0,
+                    "@media(min-width:760px)":{
+                        padding:0
+                    }
                 }
             }
         }
