@@ -57,7 +57,7 @@ table {
 
 @font-face {
   font-family: "Bubblegum";
-  font-weight: 200;
+  /* font-weight: 200; */
   font-style: normal;
   src: url(assets/fonts/Bubblegum.ttf)
 }
@@ -69,9 +69,7 @@ table {
 body {
   min-height: 100vh;
   font-family: "Bubblegum";
-  background: #7ed0ff
-}
-
+  background: linear-gradient(0deg, rgba(22,1,219,1) 0%, rgba(56,179,215,1) 82%, rgba(190,236,255,1) 100%);}  
 button,a,input,select {
   font-family: inherit
 }
@@ -121,9 +119,13 @@ button {
 }
 
 .hero {
-  background: url("assets/img/ready/website.png") center bottom no-repeat;
+  background: url("assets/img/ready/website 4.png") center bottom no-repeat;
   background-size: cover;
-  position: relative
+  position: relative;
+  height:110vh;
+  display: flex;
+  align-items: center;
+  
 }
 
 .hero::after {
@@ -1015,7 +1017,7 @@ button {
 
 
 .ready {
-  background: linear-gradient(0deg, rgba(18,82,207,1) 0%, rgba(67,148,240,1) 51%, rgba(126,208,255,1) 100%);  /* background: url("assets/img/ready/website 2.png")  center / contain no-repeat,#81CCFD; */
+  /* background: linear-gradient(0deg, rgba(18,82,207,1) 0%, rgba(67,148,240,1) 51%, rgba(126,208,255,1) 100%);  background: url("assets/img/ready/website 2.png")  center / contain no-repeat,#81CCFD; */
   /* position: relative; */
  /* width: 100vw;
  height: 90vh; */

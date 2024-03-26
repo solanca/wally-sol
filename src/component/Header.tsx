@@ -1,8 +1,15 @@
 import { Menu } from "@mui/icons-material";
-import { AppBar, Box, Button, ButtonBase, Drawer, Grid, Hidden, List, ListItemButton, ListItemText, Toolbar } from "@mui/material";
+import { Box, Button, ButtonBase, Drawer, Grid, Hidden, List, ListItemButton, ListItemText } from "@mui/material";
 import { useState } from "react";
 
-type Props = {};
+interface Props {
+  /**
+   * Injected by the documentation to work in an iframe.
+   * You won't need it on your project.
+   */
+  window?: () => Window;
+  children?: React.ReactElement;
+}
 
 const Header = (_props: Props) => {
   const [open,setOpen] = useState<boolean>(false);
@@ -15,37 +22,38 @@ const Header = (_props: Props) => {
   
   return (
     <>
-    <AppBar
-    id="start"
-      position="sticky"
+    {/* <HideOnScroll> */}
+
+    {/* <AppBar
+    position="absolute"
       sx={{
-        // backgroundColor:"transparent",
+        backgroundColor:"transparent",
         // background:"linear-gradient(0deg, rgba(133,214,247,1) 0%, rgba(190,236,255,1) 43%)",
         // border:"1px solid #38B3D7",
-        height: 70,
-        borderRadius: 30,
-        boxShadow: "1px 5px 5px #38B3D7",
-        top: 30,
+        // borderRadius: 30,
+        top:0,
+        boxShadow: "none",
+        // top: 30,
       }}
     >
-      <Toolbar>
+      <Toolbar sx={{height:100}}> */}
         <Hidden mdDown>
 
-        <Box sx={{ position: "absolute", top: 26, left: 30 }}>
+        <Box sx={{ position: "absolute", top: 36, left: 30 }}>
 
-          <ButtonBase sx={{mr:4}} onClick={() => scrollToAboutMe("about")}>About Me</ButtonBase>
-          <ButtonBase sx={{mr:4}} onClick={() => scrollToAboutMe("wallynomics")}>Wallynomics</ButtonBase>
-          <ButtonBase sx={{mr:4}} onClick={() => scrollToAboutMe("how_to_buy")}>How to Buy</ButtonBase>
+          <ButtonBase sx={{mr:4,color:'white'}} onClick={() => scrollToAboutMe("about")}>About Me</ButtonBase>
+          <ButtonBase sx={{mr:4,color:'white'}} onClick={() => scrollToAboutMe("wallynomics")}>Wallynomics</ButtonBase>
+          <ButtonBase sx={{mr:4,color:'white'}} onClick={() => scrollToAboutMe("how_to_buy")}>How to Buy</ButtonBase>
         </Box>
         </Hidden>
-        <Grid container justifyContent={"center"} alignItems={"center"}>
+        <Grid container justifyContent={"center"} >
 
-        <img src="assets/logo.png" width={"200px"} />
+        <img src="assets/illustrations/logo.png" width={"200px"}  style={{position:'absolute',top:26}}/>
         {/* <Box flexGrow={1} /> */}
         </Grid>
         <Hidden mdDown>
 
-        <Box sx={{ position: "absolute", top: 20, right: 30 }}>
+        <Box sx={{ position: "absolute", top: 32, right: 30 }}>
           <Button>
             <img src="assets/svg/x.svg" width={20} />
           </Button>
@@ -57,12 +65,14 @@ const Header = (_props: Props) => {
         {/* <Box flexGrow={1}/> */}
 
         <Hidden mdUp>
-        <Button onClick={() => {setOpen(true)}} sx={{ position: "absolute", top: 20, right: 30 }}>
+        <Button onClick={() => {setOpen(true)}} sx={{ position: "absolute", top: 32, right: 30 }}>
           <Menu/>
         </Button>
         </Hidden>
-      </Toolbar>
-    </AppBar>
+      {/* </Toolbar>
+    </AppBar> */}
+    {/* </HideOnScroll> */}
+ 
     <Drawer open={open} anchor="right" PaperProps={{sx:{backgroundColor:'#BEECFF'}}} onClose={() => {setOpen(false)}}>
       <Box sx={{width:150,display:'flex',justifyContent:'center'}}  role="presentation">
       <List sx={{mt:6}} >

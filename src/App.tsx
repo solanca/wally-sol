@@ -3,8 +3,7 @@ import Divider from "./component/Divider";
 import Tokenomics from "./component/Tokenomics";
 import Ready from "./component/Ready";
 import Footer from "./component/Footer";
-import { Box, Button, Container, Fade, useScrollTrigger } from "@mui/material";
-import Header from "./component/Header";
+import { Box, Button, Fade, useScrollTrigger } from "@mui/material";
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
 interface Props {
@@ -56,20 +55,22 @@ function ScrollTop(props: Props) {
 function App(props:any) {
   return (
     <div className="wrapper">
-      <Container maxWidth="lg" sx={{ position:'absolute',top:20,left:0,right:0 }}>
-        <Header />
-      </Container>
+      <div id="start" />
+      {/* <Container maxWidth="lg" sx={{ position:'absolute',left:0,right:0 }}> */}
+        {/* <Header /> */}
+      {/* </Container> */}
       <Hero />
+      {/* <img src="assets/illustrations/boundary.png" height={20}/> */}
       {/* <Community/> */}
-      <div className="marque ">
+      {/* <div className="marque ">
         <Divider />
-      </div>
+      </div> */}
       
       <Tokenomics />
       <Ready />
-      <div className="marque ">
+      {/* <div className="marque ">
         <Divider />
-      </div>
+      </div> */}
       <section className="about" id="about">
         <img className="about-content" src="/assets/img/about/website 3.png" />
       </section>

@@ -29,7 +29,7 @@ const TokenomicCard = ({id,text,x}: Props) => {
     }}>
 
     <Root>
-      <CardMedia image={`assets/illustrations/${id}.png`} component="img"
+      <CardMedia sx={{background: "linear-gradient(0deg, rgba(22,1,219,1) 0%, rgba(56,179,215,1) 82%, rgba(190,236,255,1) 100%)",borderRadius:4}} image={`assets/illustrations/${id}.png`} component="img"
         height="360" />
       <CardContent>
         <Typography variant='h4' textAlign={"center"}>{text}</Typography>
