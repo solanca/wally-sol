@@ -474,13 +474,13 @@ button {
 }
 
 .tokenomics {
-  padding: 100px 0;
-  background: url("assets/img/tokenomics/tokenomics-bg.jpg") center bottom no-repeat;
+  /* padding: 100px 0; */
+  /* background: url("assets/banner/banner.png") center bottom no-repeat; */
   background-size: cover
 }
 
 .tokenomics__marque {
-  transform: translateY(100px)
+  /* transform: translateY(100px) */
 }
 
 .tokenomics__container {
