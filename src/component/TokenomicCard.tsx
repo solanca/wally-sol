@@ -1,4 +1,4 @@
-import { Box, Card, CardContent, CardMedia, Typography, styled } from '@mui/material'
+import {  Card, CardContent, CardMedia, Typography, styled } from '@mui/material'
 import {motion} from 'framer-motion'
 
 type Props = {

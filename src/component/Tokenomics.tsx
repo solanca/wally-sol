@@ -1,6 +1,5 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import Divider from "./Divider";
-import { motion } from "framer-motion";
 import TokenomicCard from "./TokenomicCard";
 type Props = {};
 
