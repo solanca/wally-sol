@@ -64,14 +64,15 @@ function App(props:any) {
       <div className="marque ">
         <Divider />
       </div>
-      <section className="about" id="about">
-        <img className="about-content" src="/assets/img/about/website 3.png" />
-      </section>
+      
+      <Tokenomics />
+      <Ready />
       <div className="marque ">
         <Divider />
       </div>
-      <Tokenomics />
-      <Ready />
+      <section className="about" id="about">
+        <img className="about-content" src="/assets/img/about/website 3.png" />
+      </section>
       <div className="marque ">
         <Divider />
       </div>
