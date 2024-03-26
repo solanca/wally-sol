@@ -13,8 +13,8 @@ function Hero() {
         <Box
           sx={{
             position: "absolute",
-            top: matches ? 180 : 300,
-            right: matches ? 10 : 300,
+            top: "35%",
+            right: "16%",
           }}
         >
           <Box sx={{ position: "relative" }}>
