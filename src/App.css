@@ -119,12 +119,13 @@ button {
 }
 
 .hero {
-  background: url("assets/img/ready/website 4.png") center bottom no-repeat;
-  background-size: cover;
+  /* padding: 0px 10px; */
+  /* background: url("assets/img/ready/website 4.png") center bottom no-repeat;
+  background-size: cover; */
   position: relative;
-  height:110vh;
+  /* height:110vh;
   display: flex;
-  align-items: center;
+  align-items: center; */
   
 }
 

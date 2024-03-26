@@ -62,9 +62,9 @@ function App(props:any) {
       <Hero />
       {/* <img src="assets/illustrations/boundary.png" height={20}/> */}
       {/* <Community/> */}
-      {/* <div className="marque ">
+      <div className="marque ">
         <Divider />
-      </div> */}
+      </div>
       
       <Tokenomics />
       <Ready />

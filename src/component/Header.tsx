@@ -1,5 +1,5 @@
 import { Menu } from "@mui/icons-material";
-import { Box, Button, ButtonBase, Drawer, Grid, Hidden, List, ListItemButton, ListItemText } from "@mui/material";
+import { Box, Button, ButtonBase, Drawer, Grid, Hidden, List, ListItemButton, ListItemText, Typography } from "@mui/material";
 import { useState } from "react";
 
 interface Props {
@@ -48,7 +48,7 @@ const Header = (_props: Props) => {
         </Hidden>
         <Grid container justifyContent={"center"} >
 
-        <img src="assets/illustrations/logo.png" width={"200px"}  style={{position:'absolute',top:26}}/>
+        <Typography variant="h2" color={"white"} style={{position:'absolute',top:26}}>Wally </Typography>
         {/* <Box flexGrow={1} /> */}
         </Grid>
         <Hidden mdDown>
