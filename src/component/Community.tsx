@@ -25,7 +25,7 @@ const Community = (_props: Props) => {
             <div className="community__btns">
               <a
                 className="community__btn community__btn_red"
-                href="https://t.me/wallysolana"
+                href="https://t.me/wallyonsolana"
               >
                <img src='assets/svg/telegram1.svg'/>
                 Join Telegram

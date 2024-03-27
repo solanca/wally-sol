@@ -1,5 +1,16 @@
 import { Menu } from "@mui/icons-material";
-import { Box, Button, ButtonBase, Drawer, Grid, Hidden, List, ListItemButton, ListItemText, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  ButtonBase,
+  Drawer,
+  Grid,
+  Hidden,
+  List,
+  ListItemButton,
+  ListItemText,
+  Typography,
+} from "@mui/material";
 import { useState } from "react";
 
 interface Props {
@@ -12,19 +23,19 @@ interface Props {
 }
 
 const Header = (_props: Props) => {
-  const [open,setOpen] = useState<boolean>(false);
-  const scrollToAboutMe = (id:string) => {
+  const [open, setOpen] = useState<boolean>(false);
+  const scrollToAboutMe = (id: string) => {
     const aboutMeSection = document.getElementById(id);
     if (aboutMeSection) {
       aboutMeSection.scrollIntoView({ behavior: "smooth" });
     }
   };
-  
+
   return (
     <>
-    {/* <HideOnScroll> */}
+      {/* <HideOnScroll> */}
 
-    {/* <AppBar
+      {/* <AppBar
     position="absolute"
       sx={{
         backgroundColor:"transparent",
@@ -37,67 +48,107 @@ const Header = (_props: Props) => {
       }}
     >
       <Toolbar sx={{height:100}}> */}
-        <Hidden mdDown>
-
+      <Hidden mdDown>
         <Box sx={{ position: "absolute", top: 36, left: 30 }}>
-
-          <ButtonBase sx={{mr:4,color:'white'}} onClick={() => scrollToAboutMe("about")}>About Me</ButtonBase>
-          <ButtonBase sx={{mr:4,color:'white'}} onClick={() => scrollToAboutMe("wallynomics")}>Wallynomics</ButtonBase>
-          <ButtonBase sx={{mr:4,color:'white'}} onClick={() => scrollToAboutMe("how_to_buy")}>How to Buy</ButtonBase>
+          <ButtonBase
+            sx={{ mr: 4, color: "white" }}
+            onClick={() => scrollToAboutMe("about")}
+          >
+            About Me
+          </ButtonBase>
+          <ButtonBase
+            sx={{ mr: 4, color: "white" }}
+            onClick={() => scrollToAboutMe("wallynomics")}
+          >
+            Wallynomics
+          </ButtonBase>
+          <ButtonBase
+            sx={{ mr: 4, color: "white" }}
+            onClick={() => scrollToAboutMe("how_to_buy")}
+          >
+            How to Buy
+          </ButtonBase>
         </Box>
-        </Hidden>
-        <Grid container justifyContent={"center"} >
-
-        <Typography variant="h2" color={"white"} style={{position:'absolute',top:26}}>Wally </Typography>
+      </Hidden>
+      <Grid container justifyContent={"center"}>
+        <Typography
+          variant="h2"
+          color={"white"}
+          style={{ position: "absolute", top: 26 }}
+        >
+          Wally{" "}
+        </Typography>
         {/* <Box flexGrow={1} /> */}
-        </Grid>
-        <Hidden mdDown>
-
+      </Grid>
+      <Hidden mdDown>
         <Box sx={{ position: "absolute", top: 32, right: 30 }}>
           <Button>
             <img src="assets/svg/x.svg" width={20} />
           </Button>
-          <Button sx={{ ml: 2 }}>
+          <Button
+            sx={{ ml: 2 }}
+            component="a"
+            target="_blank"
+            href="https://t.me/wallyonsolana"
+          >
             <img src="assets/svg/te.svg" width={20} />
           </Button>
         </Box>
-        </Hidden>
-        {/* <Box flexGrow={1}/> */}
+      </Hidden>
+      {/* <Box flexGrow={1}/> */}
 
-        <Hidden mdUp>
-        <Button onClick={() => {setOpen(true)}} sx={{ position: "absolute", top: 32, right: 30 }}>
-          <Menu/>
+      <Hidden mdUp>
+        <Button
+          onClick={() => {
+            setOpen(true);
+          }}
+          sx={{ position: "absolute", top: 32, right: 30 }}
+        >
+          <Menu />
         </Button>
-        </Hidden>
+      </Hidden>
       {/* </Toolbar>
     </AppBar> */}
-    {/* </HideOnScroll> */}
- 
-    <Drawer open={open} anchor="right" PaperProps={{sx:{backgroundColor:'#BEECFF'}}} onClose={() => {setOpen(false)}}>
-      <Box sx={{width:150,display:'flex',justifyContent:'center'}}  role="presentation">
-      <List sx={{mt:6}} >
+      {/* </HideOnScroll> */}
 
-        <ListItemButton onClick={() => scrollToAboutMe("wallynomics")}>
-          <ListItemText>Wallynomics</ListItemText>
-        </ListItemButton>
-        <ListItemButton onClick={() => scrollToAboutMe("how_to_buy")}>
-          <ListItemText>How to buy</ListItemText>
-        </ListItemButton>
-        <ListItemButton onClick={() => scrollToAboutMe("about")}>
-          <ListItemText >About Me</ListItemText>
-        </ListItemButton>
-      </List>
-      </Box>
-      <Box >
-      <Button>
+      <Drawer
+        open={open}
+        anchor="right"
+        PaperProps={{ sx: { backgroundColor: "#BEECFF" } }}
+        onClose={() => {
+          setOpen(false);
+        }}
+      >
+        <Box
+          sx={{ width: 150, display: "flex", justifyContent: "center" }}
+          role="presentation"
+        >
+          <List sx={{ mt: 6 }}>
+            <ListItemButton onClick={() => scrollToAboutMe("wallynomics")}>
+              <ListItemText>Wallynomics</ListItemText>
+            </ListItemButton>
+            <ListItemButton onClick={() => scrollToAboutMe("how_to_buy")}>
+              <ListItemText>How to buy</ListItemText>
+            </ListItemButton>
+            <ListItemButton onClick={() => scrollToAboutMe("about")}>
+              <ListItemText>About Me</ListItemText>
+            </ListItemButton>
+          </List>
+        </Box>
+        <Box>
+          <Button>
             <img src="assets/svg/x.svg" width={20} />
           </Button>
-          <Button sx={{ ml: 1 }}>
+          <Button
+            sx={{ ml: 1 }}
+            component="a"
+            target="_blank"
+            href="https://t.me/wallyonsolana"
+          >
             <img src="assets/svg/te.svg" width={20} />
           </Button>
-      </Box>
-
-    </Drawer>
+        </Box>
+      </Drawer>
     </>
   );
 };

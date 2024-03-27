@@ -28,7 +28,7 @@ const Footer = (_props: Props) => {
                   </g>
                 </svg> */}
               </a>
-              <a className="footer__btn" href="https://t.me/wallysolana">
+              <a className="footer__btn" href="https://t.me/wallyonsolana" target="_blank">
                 <img src='assets/svg/telegram1.svg' alt=''/>
                 {/* <svg
                   width="27"
@@ -69,7 +69,7 @@ const Footer = (_props: Props) => {
                 </g>
               </svg> */}
             </a>
-            <a className="footer__btn" href="https://t.me/wallysolana">
+            <a className="footer__btn"  href="https://t.me/wallyonsolana" target="_blank">
             <img src='assets/svg/telegram1.svg' alt=''/>
 
               {/* <svg
