@@ -4,6 +4,28 @@ import Header from "./Header";
 function Hero() {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.down("md"));
+
+  const handleCopyText = () => {
+    const textToCopy = import.meta.env.VITE_CONTRACT_ADDRESS;
+
+    navigator.clipboard
+      .writeText(textToCopy)
+      .then(() => {
+        console.log("Text copied successfully");
+      })
+      .catch((err) => {
+        console.error("Unable to copy text: ", err);
+      });
+  };
+
+  function abbreviateString(str: string, maxLength = 10) {
+    if (str.length <= maxLength) {
+      return str; //
+    }
+    const firstPart = str.substring(0, 10);
+    const lastPart = str.substring(str.length - 10);
+    return `${firstPart} ... ${lastPart}`;
+  }
   return (
     <section className="hero">
       <Header />
@@ -43,14 +65,13 @@ function Hero() {
               <Typography
                 variant={matches ? "caption" : "h6"}
                 className="ca"
-                sx={{ position: "absolute", top: matches ? 10 : 60, left: 40 }}
+                sx={{ position: "absolute", top: matches ? 10 : 60, left: 20 }}
               >
-                {matches
-                  ? "E6NeSa1mYXvShN78\nT4e4uJ9rEg9h8QPGpZ"
-                  : " E6NeSa1mYXvShN78...T4e4uJ9rEg9h8QPGpZ"}{" "}
+                {import.meta.env.VITE_CONTRACT_ADDRESS}
               </Typography>
             </Grid>
             <button
+              onClick={handleCopyText}
               style={{
                 background:
                   ' url("assets/img/ready/ready-copy-button-background.svg") center center no-repeat',
@@ -73,20 +94,21 @@ function Hero() {
             display: "flex",
             justifyContent: "space-between",
             pt: 4,
-            px: 4,
+            px: 1,
             pb: 4,
             backgroundColor: "#3A8FC9",
           }}
         >
           <Box>
-            <Typography variant="h4" color={"azure"}>
+            <Typography variant="h5" color={"azure"}>
               Contract Address:
             </Typography>
-            <Typography color={"azure"}>
-              E6NeSa1mYXvShN78...T4e4uJ9rEg9h8QPGpZ
+            <Typography variant="caption" color={"azure"}>
+              {abbreviateString(import.meta.env.VITE_CONTRACT_ADDRESS)}
             </Typography>
           </Box>
           <button
+            onClick={handleCopyText}
             style={{
               background:
                 ' url("assets/img/ready/ready-copy-button-background.svg") center center no-repeat',
