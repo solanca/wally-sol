@@ -74,7 +74,7 @@ const Header = (_props: Props) => {
         <Typography
           variant="h2"
           color={"white"}
-          style={{ position: "absolute", top: 26 }}
+          sx={{ position: "absolute", top: 26, textShadow: "1px 1px 2px black, -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black",}}
         >
           Wally{" "}
         </Typography>
