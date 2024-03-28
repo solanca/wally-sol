@@ -5,6 +5,7 @@ import Ready from "./component/Ready";
 import Footer from "./component/Footer";
 import { Box, Button, Container, Fade, useScrollTrigger } from "@mui/material";
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import About from "./component/About";
 
 interface Props {
   window?: () => Window;
@@ -58,8 +59,8 @@ function App(props:any) {
       <Tokenomics />
       <Ready />
       <section className="about" id="about">
-        <img className="about-content" src="/assets/img/about/website 3.png" />
-      </section>
+        <About/>
+     </section>
       <div className="marque ">
         <Divider />
       </div>

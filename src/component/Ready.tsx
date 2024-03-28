@@ -1,14 +1,16 @@
 import { Grid, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 import Bubble from "./Bubble";
+import Fish from "./Fish";
 
 type Props = {};
 
 const Ready = (_props: Props) => {
+  // const isMobile = useMediaQuery(theme.)
   // Define the animation variant
 
   return (
-    <section className="ready"id="how_to_buy">
+    <section className="ready" id="how_to_buy">
       <Grid container justifyContent={"center"} mt={2}>
         <Typography color={"azure"} variant="h2" textAlign={"center"}>
           How to buy wally
@@ -94,7 +96,45 @@ const Ready = (_props: Props) => {
             </motion.div>
           </div>
         </Grid>
+        <Fish
+          fish={1}
+          initial={{scale:0.6}}
+          animate={{
+            x: [window.innerWidth - 100, window.innerWidth * 0.3, -100],
+            y: [400, 0, -150],
+          }}
+          transition={{
+            duration: 8,
+            ease: "easeInOut",
+            times: [0, 0.6, 1],
+            repeat: Infinity,
+          }}
+        />
+        <Fish
+          fish={2}
+          animate={{
+            x: [window.innerWidth - 100, window.innerWidth * 0.5, -100],
+            y: [-300, 0, -550],
+          }}
+          transition={{
+            duration: 10,
+            ease: "easeInOut",
+            times: [0, 0.3, 1],
+            repeat: Infinity,
+          }}
+        />
+       
+        {/* <Fish x={[window.innerWidth-100,window.innerWidth*0.3,-100]} y={[900,0,-150]} times={[0,0.8,1]} duration={8} scale={0.8} fish={1}/>
+              <Fish x={[window.innerWidth-100,100,-100]} y={[200,-200,50]} times={[0,0.4,1]} duration={6} scale={0.7} fish={2}/>
+              <Fish x={[window.innerWidth-100,100,-100]} y={[600,-300,-650]} times={[0,0.3,1]} duration={10} fish={1} opposite={true}/> */}
       </Grid>
+      {/* <img src="assets/svg/fish1.gif"  style={{
+        // position: "absolute",
+        // overflow: "hidden",
+        // zIndex: 0,
+        // maxWidth: "100%",
+        transform:'rotateY(180deg)'
+      }}/> */}
     </section>
   );
 };

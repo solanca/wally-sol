@@ -69,7 +69,7 @@ table {
 body {
   min-height: 100vh;
   font-family: "Bubblegum";
-  background: linear-gradient(0deg, rgba(22,1,219,1) 0%, rgba(56,179,215,1) 82%, rgba(190,236,255,1) 100%);}  
+  background: linear-gradient(0deg, rgb(4, 1, 31) 0%, rgba(56,179,215,1) 82%, rgba(190,236,255,1) 100%);}  
 button,a,input,select {
   font-family: inherit
 }
@@ -812,6 +812,14 @@ button {
   color: #363544;
   font-size: 32px;
   padding: 12px 0
+}
+
+.fish {
+  width: 20%;
+  position: absolute;
+  top:200;
+  animation: marque 360s linear infinite both
+
 }
 
 .marque div {
