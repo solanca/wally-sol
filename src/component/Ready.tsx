@@ -1,4 +1,4 @@
-import { Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 import Bubble from "./Bubble";
 import Fish from "./Fish";
@@ -18,7 +18,7 @@ const Ready = (_props: Props) => {
       </Grid>
       <Grid container mt={2} alignItems={"center"} spacing={4}>
         <Grid item md={3} sm={6} xs={12}>
-          <div style={{ position: "relative" }}>
+          <Box style={{ position: "relative" }}>
             <Bubble y1={200} x={0} y={30} x1={0} />
             <Bubble y1={150} x={30} y={30} delay={0.5} x1={40} />
             <motion.div
@@ -35,10 +35,10 @@ const Ready = (_props: Props) => {
             >
               <img src="assets/website assets/3.png" alt="" />
             </motion.div>
-          </div>
+          </Box>
         </Grid>
         <Grid item md={3} sm={6} xs={12}>
-          <div style={{ position: "relative" }}>
+          <Box style={{ position: "relative" }}>
             <Bubble y1={300} x={0} y={-50} x1={0} />
             <motion.div
               initial={{ scale: 0.9 }}
@@ -54,10 +54,10 @@ const Ready = (_props: Props) => {
             >
               <img src="assets/website assets/5.png" alt="" />
             </motion.div>
-          </div>
+          </Box>
         </Grid>
         <Grid item md={3} sm={6} xs={12}>
-          <div style={{ position: "relative" }}>
+          <Box style={{ position: "relative" }}>
             <Bubble y1={200} x={150} y={-130} x1={0} />
 
             <motion.div
@@ -74,10 +74,10 @@ const Ready = (_props: Props) => {
             >
               <img src="assets/website assets/2.png" alt="" />
             </motion.div>
-          </div>
+          </Box>
         </Grid>
         <Grid item md={3} sm={6} xs={12}>
-          <div style={{ position: "relative" }}>
+          <Box style={{ position: "relative" }}>
             <Bubble x={0} y={-50} x1={60} y1={300} />
             <Bubble x={30} y={-50} delay={0.5} x1={0} y1={200} />
             <motion.div
@@ -94,7 +94,7 @@ const Ready = (_props: Props) => {
             >
               <img src="assets/website assets/4.png" alt="" />
             </motion.div>
-          </div>
+          </Box>
         </Grid>
         <Fish
           fish={1}
