@@ -89,10 +89,10 @@ const Tokenomics = (_props: Props) => {
         </div> */}
       {/* </div> */}
 <Grid container mb={4} spacing={4} mt={4}>
-  <Grid item md={3} sm={6}  xs={12}> <TokenomicCard id={2} text="Total Supply: 1T" x={20}/></Grid>
-  <Grid item md={3} sm={6}   xs={12}> <TokenomicCard id={1} text="LP: Burned" x={0}/></Grid>
-  <Grid item md={3} sm={6}   xs={12}> <TokenomicCard id={4}  text="Mint: Revoked" x={20}/></Grid>
-  <Grid item md={3} sm={6}   xs={12}> <TokenomicCard id={3} text="Taxes: 0" x={0}/></Grid>
+  <Grid item md={3} sm={6}  xs={12} zIndex={10}> <TokenomicCard id={2} text="Total Supply: 1T" x={20}/></Grid>
+  <Grid item md={3} sm={6}   xs={12} zIndex={10}> <TokenomicCard id={1} text="LP: Burned" x={0}/></Grid>
+  <Grid item md={3} sm={6}   xs={12} zIndex={10}> <TokenomicCard id={4}  text="Mint: Revoked" x={20}/></Grid>
+  <Grid item md={3} sm={6}   xs={12} zIndex={10}> <TokenomicCard id={3} text="Taxes: 0" x={0}/></Grid>
   {/* <Grid item md={4}></Grid>
   <Grid item md={4}></Grid>
   <Grid item md={4}></Grid> */}

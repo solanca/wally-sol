@@ -17,7 +17,7 @@ const Ready = (_props: Props) => {
         </Typography>
       </Grid>
       <Grid container mt={2} alignItems={"center"} spacing={4}>
-        <Grid item md={3} sm={6} xs={12}>
+        <Grid item md={3} sm={6} xs={12} sx={{zIndex:10}}>
           <Box style={{ position: "relative" }}>
             <Bubble y1={200} x={0} y={30} x1={0} />
             <Bubble y1={150} x={30} y={30} delay={0.5} x1={40} />
@@ -37,7 +37,7 @@ const Ready = (_props: Props) => {
             </motion.div>
           </Box>
         </Grid>
-        <Grid item md={3} sm={6} xs={12}>
+        <Grid item md={3} sm={6} xs={12} sx={{zIndex:10}}>
           <Box style={{ position: "relative" }}>
             <Bubble y1={300} x={0} y={-50} x1={0} />
             <motion.div
@@ -56,7 +56,7 @@ const Ready = (_props: Props) => {
             </motion.div>
           </Box>
         </Grid>
-        <Grid item md={3} sm={6} xs={12}>
+        <Grid item md={3} sm={6} xs={12} sx={{zIndex:10}}>
           <Box style={{ position: "relative" }}>
             <Bubble y1={200} x={150} y={-130} x1={0} />
 
@@ -76,7 +76,7 @@ const Ready = (_props: Props) => {
             </motion.div>
           </Box>
         </Grid>
-        <Grid item md={3} sm={6} xs={12}>
+        <Grid item md={3} sm={6} xs={12} sx={{zIndex:10}}>
           <Box style={{ position: "relative" }}>
             <Bubble x={0} y={-50} x1={60} y1={300} />
             <Bubble x={30} y={-50} delay={0.5} x1={0} y1={200} />

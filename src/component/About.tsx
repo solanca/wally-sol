@@ -14,7 +14,7 @@ const About = (_props: Props) => {
         </Typography>
       </Grid>
       <Grid container alignItems={"center"}   >
-        <Grid item md={6} sm={12} xs={12}>
+        <Grid item md={6} sm={12} xs={12} sx={{zIndex:10}}>
           <Grid container justifyContent={"center"}>
             <div style={{ position: "relative" }}>
               <Bubble y1={200} x={0} y={30} x1={0} />
@@ -36,7 +36,7 @@ const About = (_props: Props) => {
             </div>
           </Grid>
         </Grid>
-        <Grid item md={6} sm={12} xs={12}>
+        <Grid item md={6} sm={12} xs={12} sx={{zIndex:10}}>
           <Grid container justifyContent={"center"}>
             <Grid item md={9} sm={10} xs={10}>
               <Box sx={{ backgroundColor: "white",  p: {sm:8,xs:4},mb:{sm:0,xs:4}, borderRadius: 20,textAlign:'center' }}>
