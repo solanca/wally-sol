@@ -1,7 +1,9 @@
 import { Grid, LinearProgress, linearProgressClasses, styled } from "@mui/material";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-type Props = {};
+type Props = {
+    loading:boolean
+};
 const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
     height: 10,
     borderRadius: 5,
@@ -13,7 +15,7 @@ const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
       backgroundColor: theme.palette.mode === 'light' ? '#1a90ff' : '#308fe8',
     },
   }));
-const Loading = (_props: Props) => {
+const Loading = ({loading}: Props) => {
     const [progress, setProgress] = useState(0);
 
   useEffect(() => {
@@ -35,7 +37,7 @@ const Loading = (_props: Props) => {
     // // <Root>
     //   {/* <Box position={"relative"}> */}
     //   {/* <div> */}
-      <Grid container justifyContent={"center"} flexDirection={"column"} alignItems={"center"} sx={{height:"100vh"}}>
+      <Grid container justifyContent={"center"} flexDirection={"column"} alignItems={"center"} sx={{height:"100vh",display:loading?'flex':'none'}}>
 
           {/* <div> */}
     

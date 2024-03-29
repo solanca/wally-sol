@@ -59,9 +59,9 @@ function App(props:any) {
   },[])
   return (
     <>
-    {
-      loading ? <Loading/>:
-    <div className="wrapper">
+    
+       <Loading loading={loading} />
+    <div className="wrapper" style={{display:loading ?  'none':'flex'}}>
       <Container maxWidth="xl">
 
       <div id="start" />
@@ -87,7 +87,7 @@ function App(props:any) {
       </ScrollTop>
       </Container>
     </div>
-    }
+    
     </>
   );
 }
