@@ -55,7 +55,7 @@ function App(props:any) {
   useEffect(() => {
     setInterval(() => {
       setLoading(false)
-    },4000)
+    },3000)
   },[])
   return (
     <>
