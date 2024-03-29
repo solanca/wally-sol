@@ -6,6 +6,8 @@ import Footer from "./component/Footer";
 import { Box, Button, Container, Fade, useScrollTrigger } from "@mui/material";
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import About from "./component/About";
+import { useEffect, useState } from "react";
+import Loading from "./component/Loading";
 
 interface Props {
   window?: () => Window;
@@ -46,8 +48,19 @@ function ScrollTop(props: Props) {
   );
 }
 
+
+
 function App(props:any) {
+  const [loading,setLoading] = useState<boolean>(true);
+  useEffect(() => {
+    setInterval(() => {
+      setLoading(false)
+    },4000)
+  },[])
   return (
+    <>
+    {
+      loading ? <Loading/>:
     <div className="wrapper">
       <Container maxWidth="xl">
 
@@ -74,6 +87,8 @@ function App(props:any) {
       </ScrollTop>
       </Container>
     </div>
+    }
+    </>
   );
 }
 
