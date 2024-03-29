@@ -124,13 +124,13 @@ const Header = (_props: Props) => {
           role="presentation"
         >
           <List sx={{ mt: 6 }}>
-            <ListItemButton onClick={() => scrollToAboutMe("wallynomics")}>
+            <ListItemButton onClick={() => {scrollToAboutMe("wallynomics"); setOpen(false);}}>
               <ListItemText>Wallynomics</ListItemText>
             </ListItemButton>
-            <ListItemButton onClick={() => scrollToAboutMe("how_to_buy")}>
+            <ListItemButton onClick={() => {scrollToAboutMe("how_to_buy"); setOpen(false);}}>
               <ListItemText>How to buy</ListItemText>
             </ListItemButton>
-            <ListItemButton onClick={() => scrollToAboutMe("about")}>
+            <ListItemButton onClick={() =>{ scrollToAboutMe("about");  setOpen(false);}}>
               <ListItemText>About Me</ListItemText>
             </ListItemButton>
           </List>
