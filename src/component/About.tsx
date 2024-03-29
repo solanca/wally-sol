@@ -43,14 +43,31 @@ const About = (_props: Props) => {
       </Grid>
       <Fish
           fish={2}
+          initial={{scale:0.8}}
+
           animate={{
-            x: [window.innerWidth - 100, window.innerWidth * 0.5, -100],
+            x: [window.innerWidth - 200, window.innerWidth * 0.5, -100],
             y: [-100, -300, -550],
           }}
           transition={{
             duration: 8,
             ease: "easeInOut",
             times: [0, 0.3, 1],
+            repeat: Infinity,
+          }}
+        />
+         <Fish
+          fish={5}
+          initial={{scale:1.4,opacity:0.7}}
+          animate={{
+            rotateY:[180,180],
+            x: [100, window.innerWidth - 200,],
+            y: [-50,  -50],
+          }}
+          transition={{
+            duration: 12,
+            ease: "easeInOut",
+            times: [0,  1],
             repeat: Infinity,
           }}
         />

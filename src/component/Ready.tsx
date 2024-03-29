@@ -100,11 +100,12 @@ const Ready = (_props: Props) => {
           fish={1}
           initial={{scale:0.6}}
           animate={{
-            x: [window.innerWidth - 100, window.innerWidth * 0.3, -100],
-            y: [400, 0, -150],
+            rotateY:[180,180,180],
+            x: [100, window.innerWidth * 0.3,window.innerWidth - 100,],
+            y: [-150, 0, -650],
           }}
           transition={{
-            duration: 8,
+            duration: 12,
             ease: "easeInOut",
             times: [0, 0.6, 1],
             repeat: Infinity,
@@ -120,6 +121,33 @@ const Ready = (_props: Props) => {
             duration: 10,
             ease: "easeInOut",
             times: [0, 0.3, 1],
+            repeat: Infinity,
+          }}
+        />
+        <Fish
+          fish={4}
+          initial={{opacity:0.6}}
+          animate={{
+            x: [window.innerWidth - 100, window.innerWidth * 0.4, -100],
+            y: [0, 300, -50],
+          }}
+          transition={{
+            duration: 16,
+            ease: "easeInOut",
+            times: [0, 0.5, 1],
+            repeat: Infinity,
+          }}
+        />
+        <Fish
+          fish={3}
+          animate={{
+            x: [-100,window.innerWidth * 0.5, window.innerWidth - 100 ],
+            y: [800, 600, 850],
+          }}
+          transition={{
+            duration: 14,
+            ease: "easeInOut",
+            times: [0, 0.5, 1],
             repeat: Infinity,
           }}
         />
