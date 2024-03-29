@@ -13,7 +13,7 @@ const About = (_props: Props) => {
           About me
         </Typography>
       </Grid>
-      <Grid container alignItems={"center"} spacing={2} >
+      <Grid container alignItems={"center"}   >
         <Grid item md={6} sm={12} xs={12}>
           <Grid container justifyContent={"center"}>
             <div style={{ position: "relative" }}>
@@ -39,7 +39,7 @@ const About = (_props: Props) => {
         <Grid item md={6} sm={12} xs={12}>
           <Grid container justifyContent={"center"}>
             <Grid item md={9} sm={10} xs={10}>
-              <Box sx={{ backgroundColor: "white", p: 10, borderRadius: 20,textAlign:'center' }}>
+              <Box sx={{ backgroundColor: "white",  p: {sm:8,xs:4},mb:{sm:0,xs:4}, borderRadius: 20,textAlign:'center' }}>
                 <Typography variant="h5" sx={{ mb: 2, }}>
                   Hi, I am Wally the whale, the leader of the sea! With my
                   presence in the Solana water, I will guide my fellow ocean
@@ -89,7 +89,7 @@ const About = (_props: Props) => {
           repeat: Infinity,
         }}
       />
-      <img src="assets/svg/seaweed1.gif" width={"2%"}  style={{position:'absolute',bottom:0,right:window.innerWidth*0.1}}/>
+      {/* <img src="assets/svg/seaweed1.gif" width={"2%"}  style={{position:'absolute',bottom:0,right:window.innerWidth*0.1}}/>
       <img src="assets/svg/seaweed2.gif" style={{position:'absolute',bottom:0,right:window.innerWidth*0.18}}/>
       <img src="assets/svg/seaweed3.gif" width={"8%"} style={{position:'absolute',bottom:0,left:window.innerWidth*0.6}}/>
       <img src="assets/svg/seaweed3.gif" width={"6%"} style={{position:'absolute',bottom:0,left:window.innerWidth*0.1}}/>
@@ -99,7 +99,7 @@ const About = (_props: Props) => {
       <img src="assets/svg/seaweed4.gif"  style={{position:'absolute',bottom:0,left:window.innerWidth*0.2}}/>
       <img src="assets/svg/seaweed4.gif" style={{position:'absolute',bottom:0,left:window.innerWidth*0.5}}/>
       <img src="assets/svg/seaweed4.gif" width={"5%"} style={{position:'absolute',bottom:0,left:window.innerWidth*0.1}}/>
-      <img src="assets/svg/seaweed5.gif" style={{position:'absolute',bottom:0,right:window.innerWidth*0.7}}/>
+      <img src="assets/svg/seaweed5.gif" style={{position:'absolute',bottom:0,right:window.innerWidth*0.7}}/> */}
     </>
   );
 };

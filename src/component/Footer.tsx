@@ -10,7 +10,8 @@ const Footer = (_props: Props) => {
             <div className="footer__socials">
               <a
                 className="footer__btn footer__btn_sm"
-                href="https://twitter.com/wallyonsol"
+                href="https://twitter.com/WTWonSOL"
+                target="_blank"
               >
                 <img src='assets/svg/twitter1.svg' alt='twitter'/>
                 {/* <svg
@@ -29,7 +30,7 @@ const Footer = (_props: Props) => {
                 </svg> */}
               </a>
               <a className="footer__btn" href="https://t.me/wallyonsolana" target="_blank">
-                <img src='assets/svg/telegram1.svg' alt=''/>
+                <img src='assets/svg/telegram1.svg' alt='telegram'/>
                 {/* <svg
                   width="27"
                   height="26"
@@ -50,8 +51,9 @@ const Footer = (_props: Props) => {
           <div className="footer__socials">
             <a
               className="footer__btn footer__btn_sm"
-              href="https://twitter.com/wallyonsol"
-            >
+              href="https://twitter.com/WTWonSOL"
+              target="_blank"
+              >
                               <img src='assets/svg/twitter1.svg' alt='twitter'/>
 
               {/* <svg

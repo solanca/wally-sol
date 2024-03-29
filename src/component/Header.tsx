@@ -82,7 +82,9 @@ const Header = (_props: Props) => {
       </Grid>
       <Hidden mdDown>
         <Box sx={{ position: "absolute", top: 32, right: 30 }}>
-          <Button>
+          <Button component="a"
+            target="_blank"
+            href="https://twitter.com/WTWonSOL">
             <img src="assets/svg/x.svg" width={20} />
           </Button>
           <Button
@@ -136,7 +138,10 @@ const Header = (_props: Props) => {
           </List>
         </Box>
         <Box>
-          <Button>
+          <Button  component="a"
+            target="_blank"
+            href="https://twitter.com/WTWonSOL"
+            >
             <img src="assets/svg/x.svg" width={20} />
           </Button>
           <Button
