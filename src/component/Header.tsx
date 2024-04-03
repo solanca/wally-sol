@@ -84,7 +84,7 @@ const Header = (_props: Props) => {
         <Box sx={{ position: "absolute", top: 32, right: 30 }}>
           <Button component="a"
             target="_blank"
-            href="https://twitter.com/WTWonSOL">
+            href="https://twitter.com/WallyDaWhale">
             <img src="assets/svg/x.svg" width={20} />
           </Button>
           <Button
@@ -140,7 +140,7 @@ const Header = (_props: Props) => {
         <Box>
           <Button  component="a"
             target="_blank"
-            href="https://twitter.com/WTWonSOL"
+            href="https://twitter.com/WallyDaWhale"
             >
             <img src="assets/svg/x.svg" width={20} />
           </Button>

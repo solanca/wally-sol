@@ -10,7 +10,7 @@ const Footer = (_props: Props) => {
             <div className="footer__socials">
               <a
                 className="footer__btn footer__btn_sm"
-                href="https://twitter.com/WTWonSOL"
+                href="https://twitter.com/WallyDaWhale"
                 target="_blank"
               >
                 <img src='assets/svg/twitter1.svg' alt='twitter'/>
@@ -51,7 +51,7 @@ const Footer = (_props: Props) => {
           <div className="footer__socials">
             <a
               className="footer__btn footer__btn_sm"
-              href="https://twitter.com/WTWonSOL"
+              href="https://twitter.com/WallyDaWhale"
               target="_blank"
               >
                               <img src='assets/svg/twitter1.svg' alt='twitter'/>
