@@ -8,6 +8,7 @@ import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import About from "./component/About";
 import { useEffect, useState } from "react";
 import Loading from "./component/Loading";
+import MemesGallery from "./component/MemesGallery";
 
 interface Props {
   window?: () => Window;
@@ -73,6 +74,9 @@ function App(props:any) {
       <Ready />
       <section className="about" id="about">
         <About/>
+     </section>
+      <section className="memes" id="memes">
+        <MemesGallery/>
      </section>
       <div className="marque ">
         <Divider />
