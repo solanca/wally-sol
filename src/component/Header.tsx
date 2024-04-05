@@ -68,6 +68,12 @@ const Header = (_props: Props) => {
           >
             How to Buy
           </ButtonBase>
+          <ButtonBase
+            sx={{ mr: 4, color: "white" }}
+            onClick={() => window.open("https://drive.google.com/drive/folders/1Tge7xGx7j7kko_5p-TOd5e3gTmBI3_sC")}
+          >
+            memes
+          </ButtonBase>
         </Box>
       </Hidden>
       <Grid container justifyContent={"center"}>
@@ -134,6 +140,9 @@ const Header = (_props: Props) => {
             </ListItemButton>
             <ListItemButton onClick={() =>{ scrollToAboutMe("about");  setOpen(false);}}>
               <ListItemText>About Me</ListItemText>
+            </ListItemButton>
+            <ListItemButton onClick={() =>{ window.open("https://drive.google.com/drive/folders/1Tge7xGx7j7kko_5p-TOd5e3gTmBI3_sC");  setOpen(false);}}>
+              <ListItemText>memes</ListItemText>
             </ListItemButton>
           </List>
         </Box>
