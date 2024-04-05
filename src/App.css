@@ -1275,6 +1275,9 @@ button {
   height: 200px;
   width: 200px;
 }
+.memes {
+  padding-bottom: 40px;
+}
 /* .header {
   position: relative;
   border-radius: 30px;
