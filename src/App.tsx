@@ -9,6 +9,7 @@ import About from "./component/About";
 import { useEffect, useState } from "react";
 import Loading from "./component/Loading";
 import MemesGallery from "./component/MemesGallery";
+import RoadMap from "./component/RoadMap";
 
 interface Props {
   window?: () => Window;
@@ -71,6 +72,7 @@ function App(props:any) {
         <Divider />
       </div>
       <Tokenomics />
+      <RoadMap/>
       <Ready />
       <section className="about" id="about">
         <About/>
