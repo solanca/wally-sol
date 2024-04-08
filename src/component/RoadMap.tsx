@@ -1,18 +1,23 @@
-import { Grid, Typography } from "@mui/material"
+import { Grid, Typography, useMediaQuery, useTheme } from "@mui/material";
 
-type Props = {}
+type Props = {};
 
 const RoadMap = (_props: Props) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+
   return (
-   <section id="roadmap">
-    <Grid container justifyContent={"center"} mt={2}>
+    <section id="roadmap">
+      <Grid container justifyContent={"center"} mt={2}>
         <Typography color={"azure"} variant="h2" textAlign={"center"}>
           Roadmap
         </Typography>
       </Grid>
-      <img src="assets/roadmap.webp" width={"100%"} alt="roadmap" />
-   </section>
-  )
-}
+      <Grid container justifyContent={"center"} mt={2}>
+        <img src="assets/roadmap.webp" width={isMobile ? "90%":"80%"} alt="roadmap" style={{borderRadius:"12px"}}/>
+      </Grid>
+    </section>
+  );
+};
 
-export default RoadMap
+export default RoadMap;
