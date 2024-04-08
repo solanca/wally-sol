@@ -51,31 +51,31 @@ const Header = (_props: Props) => {
       <Hidden mdDown>
         <Box sx={{ position: "absolute", top: 36, left: 30 }}>
           <ButtonBase
-            sx={{ mr: 4, color: "white" }}
+            sx={{ mr:{xl: 4,lg:2,md:1}, color: "white" }}
             onClick={() => scrollToAboutMe("about")}
           >
             About Me
           </ButtonBase>
           <ButtonBase
-            sx={{ mr: 4, color: "white" }}
+            sx={{ mr:{xl: 4,lg:2,md:1}, color: "white" }}
             onClick={() => scrollToAboutMe("wallynomics")}
           >
             Wallynomics
           </ButtonBase>
           <ButtonBase
-            sx={{ mr: 4, color: "white" }}
+            sx={{ mr: {xl: 4,lg:2,md:1}, color: "white" }}
             onClick={() => scrollToAboutMe("roadmap")}
           >
             Roadmap
           </ButtonBase>
           <ButtonBase
-            sx={{ mr: 4, color: "white" }}
+            sx={{ mr: {xl: 4,lg:2,md:1}, color: "white" }}
             onClick={() => scrollToAboutMe("how_to_buy")}
           >
             How to Buy
           </ButtonBase>
           <ButtonBase
-            sx={{ mr: 4, color: "white" }}
+            sx={{ mr: {xl: 4,lg:2,md:1}, color: "white" }}
             onClick={() =>scrollToAboutMe("memes")}
           >
             memes
