@@ -64,6 +64,12 @@ const Header = (_props: Props) => {
           </ButtonBase>
           <ButtonBase
             sx={{ mr: 4, color: "white" }}
+            onClick={() => scrollToAboutMe("roadmap")}
+          >
+            Roadmap
+          </ButtonBase>
+          <ButtonBase
+            sx={{ mr: 4, color: "white" }}
             onClick={() => scrollToAboutMe("how_to_buy")}
           >
             How to Buy
@@ -134,6 +140,9 @@ const Header = (_props: Props) => {
           <List sx={{ mt: 6 }}>
             <ListItemButton onClick={() => {scrollToAboutMe("wallynomics"); setOpen(false);}}>
               <ListItemText>Wallynomics</ListItemText>
+            </ListItemButton>
+            <ListItemButton onClick={() => {scrollToAboutMe("roadmap"); setOpen(false);}}>
+              <ListItemText>Roadmap</ListItemText>
             </ListItemButton>
             <ListItemButton onClick={() => {scrollToAboutMe("how_to_buy"); setOpen(false);}}>
               <ListItemText>How to buy</ListItemText>
