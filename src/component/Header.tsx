@@ -139,19 +139,19 @@ const Header = (_props: Props) => {
         >
           <List sx={{ mt: 6 }}>
             <ListItemButton onClick={() => {scrollToAboutMe("wallynomics"); setOpen(false);}}>
-              <ListItemText>Wallynomics</ListItemText>
+              <ListItemText sx={{textShadow:'none'}}>Wallynomics</ListItemText>
             </ListItemButton>
             <ListItemButton onClick={() => {scrollToAboutMe("roadmap"); setOpen(false);}}>
-              <ListItemText>Roadmap</ListItemText>
+              <ListItemText sx={{textShadow:'none'}}>Roadmap</ListItemText>
             </ListItemButton>
             <ListItemButton onClick={() => {scrollToAboutMe("how_to_buy"); setOpen(false);}}>
-              <ListItemText>How to buy</ListItemText>
+              <ListItemText sx={{textShadow:'none'}}>How to buy</ListItemText>
             </ListItemButton>
             <ListItemButton onClick={() =>{ scrollToAboutMe("about");  setOpen(false);}}>
-              <ListItemText>About Me</ListItemText>
+              <ListItemText sx={{textShadow:'none'}}>About Me</ListItemText>
             </ListItemButton>
             <ListItemButton onClick={() =>{ scrollToAboutMe("memes");  setOpen(false);}}>
-              <ListItemText>memes</ListItemText>
+              <ListItemText sx={{textShadow:'none'}}>memes</ListItemText>
             </ListItemButton>
           </List>
         </Box>
