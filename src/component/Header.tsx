@@ -51,10 +51,10 @@ const Header = (_props: Props) => {
       <Hidden mdDown>
         <Box sx={{ position: "absolute", top: 36, left: 30 }}>
           <ButtonBase
-            sx={{ mr:{xl: 4,lg:2,md:1}, color: "white" }}
-            onClick={() => scrollToAboutMe("about")}
+            sx={{ mr: {xl: 4,lg:2,md:1}, color: "white" }}
+            onClick={() => scrollToAboutMe("raffle")}
           >
-            About Me
+            Raffle
           </ButtonBase>
           <ButtonBase
             sx={{ mr:{xl: 4,lg:2,md:1}, color: "white" }}
@@ -73,6 +73,12 @@ const Header = (_props: Props) => {
             onClick={() => scrollToAboutMe("how_to_buy")}
           >
             How to Buy
+          </ButtonBase>
+          <ButtonBase
+            sx={{ mr:{xl: 4,lg:2,md:1}, color: "white" }}
+            onClick={() => scrollToAboutMe("about")}
+          >
+            About Me
           </ButtonBase>
           <ButtonBase
             sx={{ mr: {xl: 4,lg:2,md:1}, color: "white" }}
@@ -138,6 +144,9 @@ const Header = (_props: Props) => {
           role="presentation"
         >
           <List sx={{ mt: 6 }}>
+            <ListItemButton onClick={() =>{ scrollToAboutMe("raffle");  setOpen(false);}}>
+              <ListItemText sx={{textShadow:'none'}}>Raffle</ListItemText>
+            </ListItemButton>
             <ListItemButton onClick={() => {scrollToAboutMe("wallynomics"); setOpen(false);}}>
               <ListItemText sx={{textShadow:'none'}}>Wallynomics</ListItemText>
             </ListItemButton>
